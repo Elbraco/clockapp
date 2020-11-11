@@ -224,7 +224,13 @@ animation: animate 1s;
 
   @media screen and (max-width: 800px){
 
-
+    .background {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        min-width: 100%;
+        min-height: 100%;
+    }
     .background-day{
         background: url(../assets/mobile/bg-image-daytime.jpg) no-repeat;
         background-size: cover;
