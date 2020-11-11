@@ -1,5 +1,5 @@
 
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
 @font-face {
     font-family: myfonts;
     src: local(fontsiphone),
@@ -118,7 +118,8 @@ section p {
     display: none;
     position: absolute;
     bottom: 0;
-animation: slide 1s;
+-webkit-animation: slide 1s;
+        animation: slide 1s;
 padding: 0rem 2rem 0rem 7rem;
 }
 .item article {
@@ -156,18 +157,40 @@ padding: 0rem 2rem 0rem 7rem;
 
 .test1 {
 
-    transform: translateY(-8rem);
-animation: animate 1s;
+    -webkit-transform: translateY(-8rem);
+
+        -ms-transform: translateY(-8rem);
+
+            transform: translateY(-8rem);
+-webkit-animation: animate 1s;
+        animation: animate 1s;
     
 }
+ 
+
+    @-webkit-keyframes animate {
+      
+       
+          from {  -webkit-transform: translateY(5rem);  transform: translateY(5rem); }
+          to {  -webkit-transform: translateY(-8rem);  transform: translateY(-8rem); }
+        }
  
 
     @keyframes animate {
       
        
-          from {  transform: translateY(5rem); }
-          to {  transform: translateY(-8rem); }
+          from {  -webkit-transform: translateY(5rem);  transform: translateY(5rem); }
+          to {  -webkit-transform: translateY(-8rem);  transform: translateY(-8rem); }
         }
+
+        @-webkit-keyframes slide {
+            from {  bottom: -105% }
+            to {
+              /* bottom: 0%; */
+               bottom: 0%; 
+            }
+
+          }
 
         @keyframes slide {
             from {  bottom: -105% }
@@ -181,7 +204,8 @@ animation: animate 1s;
          
           .night {
             background-color: rgba(0, 0, 0, 0.55);
-            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px);
           }
           .colorparaday {
             color: rgba(46, 49, 49, 1); 
@@ -275,8 +299,12 @@ animation: animate 1s;
 
     }
     .item article div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-bottom: 1.3rem;
 
     }
