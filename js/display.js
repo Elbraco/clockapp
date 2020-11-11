@@ -1,6 +1,5 @@
 
 
-
 $('#more-less a').click(function () {
     console.log('cest moi');
     $('.item').toggleClass('block');
@@ -22,4 +21,3 @@ $('#more-less a').click(function () {
     }
 
 });
-console.log($('#more').text() === 'More' );
