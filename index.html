@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
@@ -12,62 +13,65 @@
 
   <title>Frontend Mentor | Clock App</title>
 </head>
+
 <body>
   <main class="background">
-  <div class="back">
-    
-  <div id="main-quotes">
-  <a href="#" id="quotes"><img src="assets/desktop/icon-refresh.svg" alt="icon-refresh"> </a>
-  <blockquote class="container-quotes">
-    <p></p>
-    <footer>
-    <cite id="author"></cite>
-  </footer>
-  </blockquote>
+    <div class="back">
 
-</div>
+      <div id="main-quotes">
+        <a href="#" id="quotes"><img src="assets/desktop/icon-refresh.svg" alt="icon-refresh"> </a>
+        <blockquote class="container-quotes">
+          <p></p>
+          <footer>
+            <cite id="author"></cite>
+          </footer>
+        </blockquote>
 
-  <div class="location ">
-  
+      </div>
 
-   <p> <span id="meteo"></span> <span id="hello"></span>, <span id="currently">  it's currently </span> </p>
+      <div class="location ">
 
-  <h1> <span id="hours" > </span> <span id="abbr"></span> </h1>
-   <p> in <span id="city"></span></p>
 
-   <div id="more-less">
-     <a href="#"> <span id="more">More</span>  <img id="arrow-down" src="assets/desktop/icon-arrow-down.svg" alt="icon-arrow-down"></a>
+        <p> <span id="meteo"></span> <span id="hello"></span>, <span id="currently"> it's currently </span> </p>
+
+        <h1> <span id="hours"> </span> <span id="abbr"></span> </h1>
+        <p> in <span id="city"></span></p>
+
+        <div id="more-less">
+          <a href="#"> <span id="more">More</span> <img id="arrow-down" src="assets/desktop/icon-arrow-down.svg"
+              alt="icon-arrow-down"></a>
+        </div>
+
+      </div>
+
     </div>
 
-  </div>
+    <div class="item">
 
-</div>
+      <article>
+        <div id="current-timezone">
+          <h2>Current timezone</h2>
 
-  <div class="item">
+        </div>
+        <div id="dayoftheyear">
+          <h2> Day of the year</h2>
+        </div>
+      </article>
 
-   <article>
-     <div id="current-timezone">
-     <h2>Current timezone</h2>
-     
-     </div>
-     <div id="dayoftheyear">
-       <h2> Day of the year</h2>
-     </div>
-   </article>
+      <article>
+        <div id="dayoftheweek">
+          <h2>Day of the week</h2>
+        </div>
+        <div id="weeknumber">
+          <h2>Week number</h2>
+        </div>
+      </article>
+    </div>
+  </main>
 
-   <article>
-     <div id="dayoftheweek">
-       <h2>Day of the week</h2>
-     </div>
-     <div id="weeknumber">
-       <h2>Week number</h2>
-     </div>
-   </article>
-  </div>
-</main>
- 
   <script src="js/utilities.js"></script>
   <script src="js/main.js"></script>
   <script src="js/display.js"></script>
 </body>
+
 </html>
