@@ -1,14 +1,14 @@
 // URL API
 const urlWorldTime = "http://worldtimeapi.org/api/ip";
 const urlLocation = "https://freegeoip.app/json/"
-const urlQuotesRandom = "https://programming-quotes-api.herokuapp.com/quotes/random";
+const urlQuotesRandom = "https://randomquote-api.herokuapp.com/api/random-quote";
 
 
 function getQuotes(response) {
     let p = document.querySelector('p');
     let author = document.querySelector('#author')
 
-    p.textContent = response.en
+    p.textContent = response.quote
     author.innerHTML = response.author
 }
 
